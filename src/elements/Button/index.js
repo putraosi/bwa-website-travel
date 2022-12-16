@@ -75,6 +75,7 @@ Buttton.propTypes = {
   onClick: propTypes.func,
   target: propTypes.string,
   className: propTypes.string,
+  href: propTypes.string,
   isPrimary: propTypes.bool,
   isDisbaled: propTypes.bool,
   isLoading: propTypes.bool,

@@ -1,7 +1,15 @@
-import React from 'react'
+import Header from "parts/Header";
 
-export default function LandingPages() {
+import React from "react";
+import { useLocation, useParams } from "react-router-dom";
+
+const LandingPages = (props) => {
+  const location = useLocation();
   return (
-    <div>LandingPages</div>
-  )
-}
+    <>
+      <Header {...location} />
+    </>
+  );
+};
+
+export default LandingPages;
